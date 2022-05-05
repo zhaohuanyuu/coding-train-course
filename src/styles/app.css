@@ -1,0 +1,33 @@
+body{ min-height: 100vh; }
+.container{
+	position: relative;
+	max-width: 980px;
+	padding: 3% 0;
+}
+.p5-logo{
+	width: 12.2rem;
+	height: 5.627rem;
+}
+.list-wrapper{
+	z-index: 6;
+	position: relative;
+}
+.list-item{
+	/*color: #ed225d;*/
+	color: #2d7bb6;
+}
+.list-item a{
+	text-decoration: underline;
+}
+.aside-logo{
+	z-index: 2;
+	position: fixed;
+	top: 10%;
+	right: -20%;
+	opacity: .7;
+}
+@media screen and (max-width: 1386px){
+	.aside-logo{
+		right: -26.8%;
+	}
+}
