@@ -6,7 +6,8 @@ import Corner from "./components/corner";
 
 const App: Component = () => {
   const pages = import.meta.glob('/src/pages/**/*.html');
-  const [list, setList] = createSignal(Object.keys(pages).map(key => {
+	console.log(pages);
+	const [list, setList] = createSignal(Object.keys(pages).map(key => {
     const [url, name] = key.match(/\/src\/pages\/(.+)\//);
     return {
       url,
