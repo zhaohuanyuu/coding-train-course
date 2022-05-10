@@ -30,6 +30,8 @@ sketch.draw = function () {
 	rect(0, 0, 100, 50);
 	pop();
 
+	ellipse(300, 300, 60, 60)
+
 	// x += 2;
 	angle += 2;
 };
