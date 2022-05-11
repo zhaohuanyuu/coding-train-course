@@ -1,7 +1,5 @@
 import "@styles/style.css";
 import { sketch } from "@addons/p5Wrapper";
-// if need sound
-// import 'p5js-wrapper/sound';
 
 let angle = 0;
 let x = 250, y = 220;
