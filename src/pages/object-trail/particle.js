@@ -11,8 +11,6 @@ class Particle {
 
 		let v = createVector(this.x, this.y);
 
-		console.log(v);
-
 		this.history.push(v);
 
 		if (this.history.length > 100) {
