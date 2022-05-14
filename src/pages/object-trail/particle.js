@@ -20,14 +20,15 @@ class Particle {
 
 	show() {
 		stroke(255);
+
+		noFill();
 		beginShape();
 		for (let i = 0; i < this.history.length; i++) {
 			let pos = this.history[i];
-			noFill();
 			vertex(pos.x, pos.y);
-			endShape();
 		}
-		noStroke();
+		endShape();
+
 		fill(200);
 		ellipse(this.x, this.y, 24, 24);
 	}
