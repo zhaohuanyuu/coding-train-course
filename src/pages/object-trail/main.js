@@ -21,6 +21,7 @@ sketch.draw = function () {
 	}
 };
 
-function mousePressed() {
+sketch.mousePressed  = function() {
+	console.log(222)
 	vibrations.push(new Particle(mouseX, mouseY));
 }
