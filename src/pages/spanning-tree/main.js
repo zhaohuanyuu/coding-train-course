@@ -1,44 +1,25 @@
 import "@styles/style.css";
 import { sketch } from "@addons/p5Wrapper";
 
-let circles = [];
+let vertices = [];
 
-sketch.setup = function () {
-	createCanvas(600, 360);
+sketch.setup = () => {
+	createCanvas(640, 360);
 
-	const COUNT = 25;
-	// for (let i = 0; i < COUNT; i++) {
-	while (circles.length < COUNT) {
-		const circle = {
-			x: random(width),
-			y: random(height),
-			r: random(6, 36)
-		};
+};
 
-		let overlapping = false;
+sketch.draw = () => {
+	background(51);
 
-		for (let k = 0; k < circles.length; k++) {
-			const cur = circles[k];
-			const d = dist(circle.x, circle.y, cur.x, cur.y);
-
-			if (d < circle.r + cur.r) {
-				overlapping = true;
-				break;
-			}
-		}
-
-		if (!overlapping) {
-			circles.push(circle);
-		}
-	}
-
-	circles.forEach(({x, y, r}) => {
-		fill(255, 0, 150, 100);
-		noStroke();
-		ellipse(x, y, r * 2, r * 2);
+	vertices.forEach(({ x, y })=> {
+		fill(255);
+		stroke(255);
+		ellipse(x, y, 16, 16)
 	})
 };
 
-sketch.draw = function () {
-	// background(70);
-};
+sketch.mousePressed = () => {
+	const v = createVector(mouseX, mouseY);
+	vertices.push(v);
+}
+
