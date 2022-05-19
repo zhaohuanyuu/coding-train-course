@@ -1,9 +1,9 @@
-# p5-showcase
+# Coding Train Course Code
 
-ptjs showcases based on [p5-vite-kit](https://github.com/zhaohuanyuu/p5-vite-kit)
+coding train p5js learning showcases based on [p5-vite-kit](https://github.com/zhaohuanyuu/p5-vite-kit)
 
 
-### The Coding Train Course code
+### Practices List
 
 * transformation
 * object-trail
