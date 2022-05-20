@@ -21,7 +21,7 @@ const App: Component = () => {
       <ul class="list-wrapper">
         <For each={list()}>
           {
-            item => <li class="list-item p-5 text-3xl"><a href={ item.url }>{ item.name }</a></li>
+            item => <li class="list-item p-5 text-2xl"><a href={ item.url }>{ item.name }</a></li>
           }
         </For>
       </ul>
